@@ -1,0 +1,23 @@
+def diwali_lights_animation():
+    import time
+    import random
+
+    lights = ["🪔", "✨", "🌟", "💫", "🎇"]
+
+    def generate_diwali_pattern():
+        pattern = ""
+        for _ in range(15):
+            pattern += random.choice(lights)
+        return pattern
+
+    def display_diwali_animation():
+        for _ in range(5):
+            diwali_pattern = generate_diwali_pattern()
+            print(diwali_pattern)
+            time.sleep(1)
+
+    print("Wishing you a Happy Diwali with joy and light!")
+    display_diwali_animation()
+
+# Call the function to send the Diwali wishes with a unique touch
+diwali_lights_animation()
